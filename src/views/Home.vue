@@ -2,16 +2,14 @@
 .backImage
 .NTUH__art {{ NTUH__art }}
 .schoolIcon
-.NTUH_art {{ NTUH_art }}
 .NTUH__art2 {{ NTUH__art2 }}
 .news {{ news }}
 .contact {{ contact }}
 .tecnoart {{ tecnoart }}
-.teacher {{ teacher }}
 .clas {{ clas }}
+.clas2 {{ clas2 }}
 .come {{ come }}
 .HOME {{ HOME }}
-.line
 .spring_rec
 .spring_money {{ spring_money }}
 </template>
@@ -31,8 +29,8 @@ export default {
       spring_money: '“春之清華”獎學金，鼓勵藝術卓越學生”第一志願”選讀清華(5名)!',
       HOME: 'HOME',
       come: '招生',
-      clas: '學士班',
-      teacher: '師資',
+      clas: '學士班特色',
+      clas2: '學士班簡介',
       tecnoart: '科藝賞析',
       contact: '聯絡',
       news: '最新消息',
@@ -79,21 +77,15 @@ export default {
   border: 1px solid #FFFFFF
 
 .HOME
-  
-  // While hovering
-// Navigate to: "Desktop - 1";
-// Animate: Dissolve;
-  animation-timing-function: ease-out
-  animation-duration: 300ms
   position: absolute
   width: 86px
   height: 43px
-  left: calc(50% - 86px/2 - 235px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 86px/2 + 625px)
+  top: calc(50% - 43px/2 - 220px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -102,14 +94,14 @@ export default {
 
 .come
   position: absolute
-  width: 50px
+  width: 80px
   height: 43px
-  left: calc(50% - 50px/2 + 65px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 50px/2 + 640px)
+  top: calc(50% - 43px/2 - 130px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -118,14 +110,30 @@ export default {
 
 .clas
   position: absolute
-  width: 75px
+  width: 200px
   height: 43px
-  left: calc(50% - 75px/2 + 195.5px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 75px/2 + 535px)
+  top: calc(50% - 43px/2 - 40px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
+  line-height: 142.69%
+
+  /* or 26px
+  letter-spacing: 0.06em
+  color: #FFFFFF
+
+.clas2
+  position: absolute
+  width: 200px
+  height: 43px
+  left: calc(50% - 75px/2 + 535px)
+  top: calc(50% - 43px/2 + 55px)
+  font-family: Merienda
+  font-style: normal
+  font-weight: normal
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -134,14 +142,14 @@ export default {
 
 .teacher
   position: absolute
-  width: 59px
+  width: 80px
   height: 43px
   left: calc(50% - 59px/2 + 332.5px)
   top: calc(50% - 43px/2 - 406.5px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -150,14 +158,14 @@ export default {
 
 .tecnoart
   position: absolute
-  width: 103px
+  width: 170px
   height: 43px
-  left: calc(50% - 103px/2 + 479.5px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 103px/2 + 580px)
+  top: calc(50% - 43px/2 + 230px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -166,14 +174,14 @@ export default {
 
 .contact
   position: absolute
-  width: 59px
+  width: 80px
   height: 43px
-  left: calc(50% - 59px/2 + 622px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 59px/2 + 640px)
+  top: calc(50% - 43px/2 + 315px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -182,14 +190,14 @@ export default {
 
 .news
   position: absolute
-  width: 103px
+  width: 170px
   height: 43px
-  left: calc(50% - 103px/2 - 78px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 103px/2 + 580px)
+  top: calc(50% - 43px/2 + 140px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -198,14 +206,14 @@ export default {
 
 .NTUH_art
   position: absolute
-  width: 269px
+  width: 390px
   height: 43px
-  left: calc(50% - 269px/2 - 450px)
-  top: calc(50% - 43px/2 - 406.5px)
+  left: calc(50% - 269px/2 + 450px)
+  top: calc(50% - 43px/2 - 240px)
   font-family: Merienda
   font-style: normal
   font-weight: normal
-  font-size: 18px
+  font-size: 36px
   line-height: 142.69%
 
   /* or 26px
@@ -217,7 +225,7 @@ export default {
   width: 101px
   height: 100px
   left: calc(50% - 101px/2 - 670px)
-  top: calc(50% - 100px/2 - 265px)
+  top: calc(50% - 100px/2 - 230px)
   background: url(../assets/cropped-NTHU-logo.png)
 
 .NTUH__art
