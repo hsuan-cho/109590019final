@@ -1,10 +1,10 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> /
-    <router-link to="/one">1</router-link> /
-    <router-link to="/two">2</router-link> /
-    <router-link to="/three">3</router-link> /
-    <router-link to="/four">4</router-link> 
+    <router-link to="/">Home</router-link>/
+    <router-link to="/one">學士班簡介</router-link>/
+    <router-link to="/two">學士班特色</router-link>/
+    <router-link to="/three">最新消息</router-link>/
+    <router-link to="/four">聯絡</router-link> 
   </div>
   <router-view/>
 </template>
