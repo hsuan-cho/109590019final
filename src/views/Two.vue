@@ -1,4 +1,5 @@
 <template lang="pug">
+.backImage
 .intro {{ intro }}
 .intro_Rec
 .NTHU {{ NTHU }}
@@ -51,7 +52,7 @@ export default {
 	width: 1050px
 	height: 480px
 	left: calc(50% - 1440px/2 + 200px)
-	top: calc(50% - 1024px/2 + 200px)
+	top: calc(50% - 1024px/2 + 210px)
 	font-family: Merienda
 	font-style: normal
 	font-weight: bold
@@ -61,7 +62,7 @@ export default {
 	/* or 31px
 	text-align: justify
 	letter-spacing: 0.28em
-	color: #3c096c
+	color: #FFFFFF
 
 .NTHU
 	position: absolute
@@ -276,4 +277,10 @@ export default {
 	left: calc(50% - 685px/2 + 300px)
 	top: calc(50% - 244px/2 - 300px)
 	background: url(../assets/8331.jpg)
+
+.backImage
+	position: absolute
+	width: 100vw
+	height: 2000px
+	background: url(../assets/4884841.jpg)
 </style>
