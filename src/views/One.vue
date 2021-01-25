@@ -1,20 +1,20 @@
 <template lang="pug">
-.bottom
-.up_grid
-.bottomgrid
-.intro_rec
-.IPTA_feature
-.core
-.NTHUisNationalTop {{ NTHUisNationalTop }}
-.classgood {{ classgood }}
-.coreability {{ coreability }}
-.socialcare {{ socialcare }}
-.NTHU2018 {{ NTHU2018 }}
-.forFuture {{ forFuture }}
-.straightline
-.GOTOCircle
-.lecture {{ lecture }}
-.GOTO {{ GOTO }}
+.desk2
+	.up_grid
+	.bottomgrid
+	.intro_rec
+	.IPTA_feature
+	.core
+	.NTHUisNationalTop {{ NTHUisNationalTop }}
+	.classgood {{ classgood }}
+	.coreability {{ coreability }}
+	.socialcare {{ socialcare }}
+	.NTHU2018 {{ NTHU2018 }}
+	.forFuture {{ forFuture }}
+	.straightline
+	.GOTOCircle
+	.lecture {{ lecture }}
+	.GOTO {{ GOTO }}
 </template>
 
 <script>
@@ -45,10 +45,9 @@ export default {
 <style lang="sass">
 .desk2
 	position: relative
-	width: 1440px
-	height: 1024px
-	left: calc(50% - 1440px/2)
-	top: calc(50% - 1024px/2 - 512px)
+	width: 100vw
+	height: 100vh
+	top: calc(50% - 1024px/2 - 600px)
 	background: #FFFFFF
 .GOTO
 	position: absolute
@@ -269,14 +268,13 @@ export default {
 	width: 685px
 	height: 244px
 	left: calc(50% - 685px/2 + 377.5px)
-	top: calc(50% - 244px/2 - 390px)
+	top: calc(50% - 244px/2 - 310px)
 	background: url(../assets/8331.jpg)
 
 .bottom
 	position: absolute
-	width: 1440px
-	height: 1024px
-	left: calc(50% - 1440px/2)
-	top: calc(50% - 1024px/2)
+	width: 100vw
+	height: 100vh
+	bottom: 0px
 	background: #FFFFFF
 </style>
