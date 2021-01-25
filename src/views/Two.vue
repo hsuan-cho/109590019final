@@ -1,22 +1,17 @@
 <template lang="pug">
-.desk2
-	.intro {{ intro }}
-	.up_grid
-	.bottomgrid
-	.intro_rec
-	.IPTA_feature
-	.core
-	.NTHU {{ NTHU }}
-	.p2 {{ p2 }}
-	.p3 {{ p3 }}
-	.p4 {{ p4 }}
-	.p5 {{ p5 }}
-	.p6 {{ p6 }}
-	.p7 {{ p7 }}
-	.P {{ P }}
-	.PP {{ PP }}
-	.PPP {{ PPP }}
-	.PPPP {{ PPPP }}
+.intro {{ intro }}
+.intro_Rec
+.NTHU {{ NTHU }}
+.p2 {{ p2 }}
+.p3 {{ p3 }}
+.p4 {{ p4 }}
+.p5 {{ p5 }}
+.p6 {{ p6 }}
+.p7 {{ p7 }}
+.P {{ P }}
+.PP {{ PP }}
+.PPP {{ PPP }}
+.PPPP {{ PPPP }}
 </template>
 
 <script>
@@ -255,7 +250,7 @@ export default {
 	letter-spacing: 0.28em
 	color: #7209b7
 
-.intro_rec
+.intro_Rec
 	position: absolute
 	width: 1200px
 	height: 1580px
@@ -271,21 +266,14 @@ export default {
 	width: 916px
 	height: 196px
 	left: calc(50% - 916px/2 - 268px)
-	top: calc(50% - 196px/2 + 414px)
+	top: calc(50% - 196px/2 + 1250px)
 	background: url(../assets/19273.jpg)
 
 .up_grid
 	position: absolute
 	width: 685px
 	height: 244px
-	left: calc(50% - 685px/2 + 377.5px)
-	top: calc(50% - 244px/2 - 325px)
+	left: calc(50% - 685px/2 + 300px)
+	top: calc(50% - 244px/2 - 300px)
 	background: url(../assets/8331.jpg)
-
-.bottom
-	position: absolute
-	width: 1440px
-	height: 1024px
-	bottom: 0px
-	background: #FFFFFF
 </style>
