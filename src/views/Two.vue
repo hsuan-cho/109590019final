@@ -1,211 +1,104 @@
 <template lang="pug">
-  #app
-    .pageContainer
-    .boxFlex
-      .box
-      .ipta
-      .box
-    .side1
-    .innerContainer
-      .title
-      .menuFlex
-        //- .menu(v-for="item in menu") {{item.menuTitle}}
-        //-   .menuListContainer
-        //-     .menuList(v-for="i in item.menuList") {{i.title}}
-        router-link.menu(v-for="item in menu" :to="{path: '/' + item.id}" :key="item.id") {{item.menuTitle}}
-          .menuListContainer
-            router-link.menuListText.menuList(v-for="i in item.menuList" :to="{path: '/' + i.id}" :key="i.id") {{i.title}}
-      .scholarship
-      router-view
-      
-      .QRcode
-    .side2
-    .boxFlex
-      .box
-      .ipta
-      .box
+.desk2
+	.up_grid
+	.bottomgrid
+	.intro_rec
+	.IPTA_feature
+	.core
+	.NTHU {{ NTHU }}
 </template>
+
 <script>
+// @ is an alias to /src
+
 export default {
-  name: 'menu',
-  data(){
-      return {
-        menu:[
-                {menuTitle:'清大藝術學院'},
-                {menuTitle:'HOME', id:''},
-                {menuTitle:'NEWS'},
-                {
-                  menuTitle:'招生' ,
-                  menuList: [
-                    {title: '〝春之清華〞卓越獎學金 5名'},
-                    {title: '學士班 FB粉絲頁'},
-                    {title: '2020 招生', id: '2020'},
-                    {title: '招生Q&A', id: 'q&a'},
-                    {title: '過往招生資料'}
-                  ]
-                },
-                {
-                  menuTitle:'學士班',
-                  menuList: [
-                    {title: '學士班簡介', id: 'introduction'},
-                    {title: '學士班課程', id: 'course'},
-                    {title: '國際交換'},
-                    {title: '藝術學院大樓'}
-                  ]
-                },
-                {
-                  menuTitle:'師資',
-                  menuList: [
-                    {title: '學士班師資'},
-                    {title: '藝設系師資'},
-                    {title: '音樂系師資'},
-                    {title: '電資院師資'}
-                  ]
-                },
-                {
-                  menuTitle:'科藝賞析',
-                  menuList: [
-                    {title: '數位文創作品'},
-                    {title: '互動藝術作品'},
-                    {title: '動力藝術作品'},
-                    {title: '聲音藝術作品'},
-                    {title: '科技表演藝術'}
-                  ]
-                },
-                {menuTitle:'聯絡'}
-            ]
-      }
-  }
+	name: 'Two',
+	data() {
+		return {
+			NTHU: '國立清華大學在2016年11月與國立新竹教育大學合校後，增設了以培養優秀美術設計與音樂人才為宗旨的「藝術學院」，前為「國立新竹教育大學 人文社會與藝術學院」。目前藝術學院設有藝術與設計學系（創作組、設計組、碩士班及在職專班）、音樂學系（學士班、碩士班及在職專班），專任教師25位（藝術與設計學系14位、音樂學系11位），院以培養優秀美術設計與音樂人才為宗旨，在多元的師資培育激盪下，培育出許多優秀的藝術家和設計新銳，並屢獲國內外大獎，展現出令人矚目的創作能量，受相關產業矚目與青睞。除此，本學院106學年度成立藝術學院【〝科技藝術〞跨域學士班】， 由許素朱(小牛）院長率領藝術學院教師以及臺灣一群科技藝術特種部隊擔任教師與顧問指導，特別聘請陶亞倫老師擔任學士班班主任，希望培養一群臺灣科技藝術的尖兵。106學年度也會開始籌設【科技藝術研究所】，含新媒體藝術組、創新科技組等兩組。數位時代來臨，新形式的科技與藝術結合之創作如雨後春筍，清華大學的是國內科學與科技頂尖學府，這對藝術學院發展「科技藝術」具有得天獨厚的優勢。期望為清華創造新的「科技藝術跨域 DNA」、以及「科技藝術跨域的新文化」，讓清華成為臺灣藝術界的跨域先鋒！科技藝術，當代藝術的 newtype !「科技藝術（TechArt）」是當代藝術的新形式創作也是國際藝術發展的重要趨勢，包含互動藝術、電腦動畫、電腦音樂與聲音藝術、數位表演、混合藝術、數位社群、創客藝術…等。在當代數位美學與數位藝術的基礎下，我們結合創新科技，如各種互動感測技術、虛擬/擴增/混合實境、物聯網、人工智慧、大數據分析…，把「科技藝術」結合視為「專業領域」在清華做跨域研究創作人才培育。在清華強大的科技研發環境下，科技與藝術充滿著難以預期的實驗性與挑戰性，期締造臺灣TechArt 2.0新契機與新氣象！在共享學習、共享創意環境裡發揮創意美學！我們師資群除來自清華校內藝術學院、電資學院、工學院、人文社會等跨域教師外，我們也將聘進一群來自美國、歐洲與日本跨國與跨域的教師。我們也聘請臺灣在科技藝術活躍且經驗豐富的知名業界團隊或藝術家（豪華朗機工、帝凱科技、何理互動設計…）加入我們的教師群。我們師資每個人本身都是跨領域背景，所開的每一門課也都是已跨域融合後的課。同學可在跨域多元指導與跨域共享學習環境裡，發揮自我與創意美學！培養車庫創客精神，發揮數位自造無限能力同學進來需自己make自己的學習環境。自己動手做自己的創客桌子，自己動手make數位機具。在自己make的創客空間，用自己make的數位機具，繼續創造更多科技藝術碰撞的研究與創作。數位藝術跨域轉繹，數位文創跨域激發！我們結合智慧科技與創新藝術，讓科技謙和無形的融入數位藝術的創作，讓藝術展現當代的無限可能性；而在數位文創應用方面，期盼科技能讓生活空間充滿智慧與互動，隨時隨地提供資訊讓所有數據導入城市社會，讓整個社會形成一個大的智慧城市實驗室，並最終期盼促成創意人才育成及數位文創經濟之發展。我們歡迎喜歡科技與藝術的夥伴，來報考清大藝術學院科技藝術跨域學士班，讓我們一起來締造清大「科技藝術跨域的新DNA」、以及「科技藝術跨域的新文化」！',
+		}
+	}
 }
 </script>
+
 <style lang="sass">
-html
-#app 
-  background-color: #801313
-  width: 1920px
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  text-align: center
-  // color: #2c3e50
-  padding: 15px
-.pageContainer
-  padding: 15px
-  border: 1px solid #C7A10D 
-  margin: auto
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: space-between
-  align-items: center
-.side1
-  width: 51px
-  height: 3037px
-  background-image: url("./assets/00.png")
-.side2
-  width: 51px
-  height: 3037px
-  background-image: url("./assets/0.png")
-.boxFlex
-  width: 100%
-  height: 50px
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
-.box
-  width: 44px
-  height:53px
-  background-color: #C7A10D
-.ipta
-  width: 1720px
-  height:40px
-  background-image: url("./assets/ipta.png")
-.innerContainer
-  width: 1758px
-  height: 3067px
-  border: 1px solid #C7A10D
-  // margin: auto
-  position: relative
-.menuFlex
-  width: 1618px
-  margin: auto
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: space-between
-  // align-items: center
-.menu
-  border: 1px solid #C7A10D
-  // margin: auto
-  padding: 10px 20px
-  font-size: 40px
-  // width: 100px
-  color: #C7A10D
-  margin-top: 20px
-  margin-bottom: 20px
-  position: relative
-  z-index: 10
-  // display: flex
-  // align-items: center
-  text-decoration: none
-.menu:hover
-  .menuListContainer
-    display: flex
-    flex-direction: column
-.menu:hover
-  cursor: pointer
-.menuListContainer
-  width: 300px
-  display: none
-  position: absolute
-  font-size: 18px
-  color: black
-  background-color: #C7A10D
-  left: 0px
-  top: 74px
-.menuList
-  border: 3px solid #F2F608
-  padding: 20px
-.menuList:hover
-  background-color: #fff
-  opacity: 0.2
-.menuListText
-  color: black
-  font-size: 18px
-  text-decoration: none
-.title
-  width: 1600px
-  height:120px
-  background-image: url("./assets/----N T H U I P T A----.png")
-  margin: auto
-  margin-top: 20px
-.scholarship
-  width: 660px
-  height:60px
-  background-image: url("./assets/〝春之清華〞卓越獎學金.png") 
-  margin: auto
-  border: 1px solid #C7A10D 
-  margin-bottom: 20px
-  margin-top: 20px
-.QRcode
-  width: 100px
-  height:100px
-  background-image: url("./assets/barcode 1.png")
-  background-size: cover
-  position: absolute
-  right: 20px
-  bottom: 20px
-#nav 
-  padding: 30px
+.desk3
+	position: relative
+	width: 100vw
+	height: 100vh
+	top: calc(50% - 1024px/2 - 600px)
+	background: #FFFFFF
 
+.NTHU
+	position: absolute
+	width: 801px
+	height: 480px
+	left: calc(50% - 801px/2 - 222.5px)
+	top: calc(50% - 480px/2 - 100px)
+	font-family: Merienda
+	font-style: normal
+	font-weight: normal
+	font-size: 20px
+	line-height: 156.69%
 
-#nav a 
-  font-weight: bold
-  color: #2c3e50
+	/* or 31px
+	text-align: justify
+	letter-spacing: 0.28em
+	color: #000000
 
+.coreabilityrec
+	position: absolute
+	width: 393px
+	height: 436px
+	left: calc(50% - 393px/2 - 461.5px)
+	top: calc(50% - 436px/2 + 98px)
+	background: #FFFFFF
+	border: 3px solid #000000
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 19px
 
-#nav a.router-link-exact-active 
-  color: #42b983
+.classgoodrec
+	position: absolute
+	width: 871px
+	height: 266px
+	left: calc(50% - 871px/2 - 222.5px)
+	top: calc(50% - 266px/2 - 336px)
+	background: #FFFFFF
+	border: 3px solid #000000
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 19px
 
+.intro_rec
+	position: absolute
+	width: 949px
+	height: 674px
+	left: calc(50% - 949px/2 + 182.5px)
+	top: calc(50% - 674px/2 + 98px)
+	background: #FFFFFF
+	border: 3px solid #000000
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 19px
+
+.bottomgrid
+	position: absolute
+	width: 916px
+	height: 196px
+	left: calc(50% - 916px/2 - 268px)
+	top: calc(50% - 196px/2 + 414px)
+	background: url(../assets/19273.jpg)
+
+.up_grid
+	position: absolute
+	width: 685px
+	height: 244px
+	left: calc(50% - 685px/2 + 377.5px)
+	top: calc(50% - 244px/2 - 325px)
+	background: url(../assets/8331.jpg)
+
+.bottom
+	position: absolute
+	width: 1440px
+	height: 1024px
+	bottom: 0px
+	background: #FFFFFF
 </style>

@@ -172,7 +172,7 @@ export default {
 	width: 220px
 	height: 58px
 	left: calc(50% - 279px/2 - 483.5px)
-	top: calc(50% - 58px/2 - 380px)
+	top: calc(50% - 58px/2 - 365px)
 	font-family: Merienda
 	font-style: normal
 	font-weight: bold
@@ -188,7 +188,7 @@ export default {
 	width: 801px
 	height: 480px
 	left: calc(50% - 801px/2 - 222.5px)
-	top: calc(50% - 480px/2 - 110px)
+	top: calc(50% - 480px/2 - 100px)
 	font-family: Merienda
 	font-style: normal
 	font-weight: normal
@@ -216,7 +216,7 @@ export default {
 	width: 871px
 	height: 266px
 	left: calc(50% - 871px/2 - 222.5px)
-	top: calc(50% - 266px/2 - 316px)
+	top: calc(50% - 266px/2 - 336px)
 	background: #FFFFFF
 	border: 3px solid #000000
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
@@ -268,13 +268,13 @@ export default {
 	width: 685px
 	height: 244px
 	left: calc(50% - 685px/2 + 377.5px)
-	top: calc(50% - 244px/2 - 310px)
+	top: calc(50% - 244px/2 - 325px)
 	background: url(../assets/8331.jpg)
 
 .bottom
 	position: absolute
-	width: 100vw
-	height: 100vh
+	width: 1440px
+	height: 1024px
 	bottom: 0px
 	background: #FFFFFF
 </style>
